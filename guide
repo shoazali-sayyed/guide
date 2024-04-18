@@ -1,0 +1,21 @@
+**********************NEXUS SERVER************************************
+
+http://nexus-common.apps.na410.prod.nextcle.com/repository/nodejs
+
+*********************Python Builder***********************************
+
+oc import-image python-39 --from=registry.access.redhat.com/ubi8/python-39 --confirm
+
+oc new-app --name blog python-39~https://github.com/sclord/django-ex.git
+
+**********************Configuration Data*******************************
+
+quay.io/redhattraining/hello-world-nginx:v1.0
+
+***********************HELM********************************************
+
+quay.io/redhattraining/loadtest:v1.0
+
+Path: /api/loadtest/v1/healthz
+
+***********************************************************************
