@@ -14,8 +14,10 @@ quay.io/redhattraining/hello-world-nginx:v1.0
 
 ***********************HELM********************************************
 
-quay.io/redhattraining/loadtest:v1.0
+docker.io/shoazali/ex288-api:latest
 
-Path: /api/loadtest/v1/healthz
+Path: /q/health/live
+      /q/health/ready
+     /crash to check
 
 ***********************************************************************
